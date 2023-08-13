@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    width:auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    width:100%;
+    height: 60px;
+}
+.nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.nav .btn{
+    margin-top:9px;
+    margin-left:70px;
+    display:flex;
+    position: absolute;
+}
+.nav .src{
+    height:40px;
+    display:flex;
+    cursor:pointer;
+    padding:10px 11px;
+    border:2px solid rgba(80, 81, 81, 0.591);
+    align-items: center;
+    border-radius: 40px;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.nav .src input{
+    outline: none;
+    width:0;
+    border:none;
+    font-weight: 400;
+    transition: 0.6;
+    background: transparent;
+    font-size: 16px;
+}
+
+.nav .src:hover input{
+    width:300px;
+}
+.src a .fa{
+    font:18px;
+    color:green;
+
+}
+.nav ul li {
+    line-height: 60px;
+    list-style: none;
+    margin-right: 16px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #2b2424;
+    font-size: 14px;
+    position: relative;
+}
+
+.nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(95, 25, 25);
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover:after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 160px;
+}
+
+.content .cont {
+    background: rgba(0,0,0,0.7) url(offer1.jpg) no-repeat;
+    cursor: pointer;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    width: 1200px;
+    height: 480px;
+}
+.da_ta{
+    width: 1200px;
+    height: 360px;
+    margin: auto;
+    text-align: center;
+}
+.da_ta .he_ad{
+    font-weight: 200;
+    color:rgba(253, 117, 6, 0.918);
+    margin:16px;
+    font-size: 32px;
+}
+.da_ta .ho_me{
+    font-size: 16px;
+    text-align: center;
+    margin:12px auto;
+    color:#fff;
+}
+
+.main_body{
+    width:100%;
+}
+.main_body .int_ro{
+    width: 1200px;
+    height: 480px;
+    margin: auto;
+    text-align: center;
+}
+.main_body .int_ro .qstn{
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center{
+    width: 100%;
+}
+.center .cent_body{
+    width: 1200px;
+    height: 540px;
+    margin: auto;
+    text-align: center;
+}
+
+.center .cent_body h3{
+    color: red;
+    font-size: 28px;
+    text-decoration: underline;
+    margin:3px;
+    position: absolute;
+    left:46%;
+    top:154%;
+}
+.center .cent_body ul{
+    height:540px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top:26px;
+    left:20%;
+}
+.center .cent_body ul li{
+    text-align: left;
+    margin:18px;
+    color: red;
+}
+.center .cent_body img{
+    margin-top:4px;
+    width:540px;
+    height:380px;
+    position:absolute;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.center2{
+    width: 100%;
+}
+.center2 .cent_body2{
+    width: 1200px;
+    height: 540px;
+    margin: auto;
+    text-align: center;
+}
+
+.center2 .cent_body2 h3{
+    color: rgb(9, 255, 0);
+    font-size: 28px;
+    text-decoration: underline;
+    margin:3px;
+    position: absolute;
+    left:46%;
+    top:246%;
+}
+.center2 .cent_body2 ul{
+    height:540px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top:36px;
+    left:20%;
+}
+.center2 .cent_body2 ul li{
+    text-align: left;
+    margin:18px;
+    color: rgb(9, 255, 0);
+}
+.center2 .cent_body2 img{
+    margin-top:38px;
+    width:560px;
+    height:360px;
+    position:absolute;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.center3{
+    width: 100%;
+}
+.center3 .cent_body3{
+    width: 1200px;
+    height: 540px;
+    margin: auto;
+    text-align: center;
+}
+
+.center3 .cent_body3 h3{
+    color: rgb(255, 170, 0);
+    font-size: 28px;
+    text-decoration: underline;
+    margin:3px;
+    position: absolute;
+    left:46%;
+    top:324%;
+}
+.center3 .cent_body3 ul{
+    height:540px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top:36px;
+    left:20%;
+}
+.center3 .cent_body3 ul li{
+    text-align: left;
+    margin:18px;
+    color: rgb(255, 170, 0);
+}
+.center3 .cent_body3 img{
+    margin-top:38px;
+    width:600px;
+    height:360px;
+    position:absolute;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.top{
+    float:right;
+    position:fixed;
+    bottom:1%;
+    right:1%;
+    background-color: rgb(10, 204, 39);
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    font-weight: 300;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+}
+.top a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.footer{
+    width: 100%;
+    height: 304px;
+    background-color: rgb(9, 9, 9);
+}
+.footer .bottom{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+.footer .bottom .foot_element{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+}
+.footer .bottom .foot_element ul{
+    margin:20px 60px 20px 60px;
+    background-color: #151313a4;
+    border-radius: 8px;
+}
+.footer .bottom .foot_element li{
+    list-style: none;
+    text-align: left;
+    margin:2px;
+    padding:4px;
+}
+.footer .bottom .foot_element ul li .head_element{
+    font-size: 20px;
+    color:#fff;
+}
+.footer .bottom .foot_element ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.footer .bottom .foot_element ul li a:hover{
+    color:red;
+}
+.footer .bottom .icon{
+    height:50px;
+    line-height: 50px;
+}
+.footer .bottom .icon a{
+    margin-right:20px;
+    text-decoration: none;
+    color:white;
+}
+
+.footer .bottom .element{
+    height:50px;
+    line-height: 50px;
+}
+.footer .bottom .element ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer .bottom .element ul li{
+    list-style: none;
+    text-align: center;
+    margin-right:40px;
+}
+.footer .bottom .element ul li a{
+    text-decoration: none;
+    color:#fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.footer .bottom .dev{
+    background-color: #060606;
+    height:44px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size: 13px;
+}

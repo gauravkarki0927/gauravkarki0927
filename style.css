@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    width:auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navi {
+    width:100%;
+    height: 60px;
+}
+.navi ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.navi .btn{
+    margin-top:9px;
+    margin-left:70px;
+    display:flex;
+    position: absolute;
+}
+.navi .src{
+    height:40px;
+    display:flex;
+    cursor:pointer;
+    padding:10px 11px;
+    border:2px solid rgba(80, 81, 81, 0.591);
+    align-items: center;
+    border-radius: 40px;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.navi .src input{
+    outline: none;
+    width:0;
+    border:none;
+    font-weight: 400;
+    transition: 0.6;
+    background: transparent;
+    font-size: 16px;
+}
+
+.navi .src:hover input{
+    width:300px;
+}
+.src a .fa{
+    font:18px;
+    color:green;
+
+}
+.navi ul li {
+    line-height: 60px;
+    list-style: none;
+    margin-right: 16px;
+}
+
+.navi ul li a {
+    text-decoration: none;
+    color: #2b2424;
+    font-size: 14px;
+    position: relative;
+}
+
+.navi ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(95, 25, 25);
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navi ul li a:hover:after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 344px;
+}
+
+.content .cont {
+    background: rgba(0,0,0,0.2) url(index.jpg) no-repeat;
+    cursor: pointer;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    width: 1200px;
+    height: 340px;
+}
+.home{
+    width:100%;
+}
+
+.home .inner{
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+.home .inner h1{
+    font-weight: 200;
+    color:rgba(253, 117, 6, 0.918);
+    margin:8px;
+}
+.home .inner .intro{
+    font-size: 16px;
+    text-align: center;
+    margin:12px auto;
+}
+.home .inner ul{
+    margin: 12px;
+    height:80px;
+}
+.home .inner ul a{
+    margin-right: 20px;
+}
+.home .inner .visit{
+    text-decoration: none;
+    color:#2b2424;
+    margin:6px 16px;
+    display: inline-block;
+    border:1px solid #000;
+    border-radius: 4px;
+    padding:8px 16px;
+}
+.home .inner .visit:hover{
+    background-color: #799d15;
+    border-color: #799d15;
+    color:#fff;
+}
+.home .inner .line, .about .mydata .line, .service .offer .line{
+    background-color: rgb(131, 131, 120);
+    margin-top:120px;
+    text-align: center;
+}
+
+.about{
+    width: 100%;
+    height: 680px;
+}
+
+.about .mydata{
+    width: 1200px;
+    height: 560px;
+    margin: auto;
+
+}
+.about .mydata h1{
+    font-weight: 200;
+    color:rgba(253, 117, 6, 0.918);
+    margin:6px;
+    text-align: center;
+}
+
+.about .mydata .heading{
+    font-size: 20px;
+    margin:4px;
+    text-align: center;
+}
+.about .mydata .insec{
+    margin-top:30px;
+    padding:2px;
+    display:flex;
+}
+.about .mydata .insec .des_ab{
+    border:2px solid black;
+    border-radius: 8px;
+    width:320px;
+    height:320px;
+    margin-top:40px;
+    margin-left:190px;
+    margin-right: 74px;
+    cursor: pointer;
+}
+
+.about .mydata .insec ul{
+    margin-top:50px;
+    width: 540px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.about .mydata .insec .voice{
+    padding:24px;
+    margin-top:54px;
+    font-size: 12px;
+    background-color: antiquewhite;
+}
+.about .mydata .insec ul li{
+    font-size: 16px;
+}
+.about .mydata .insec .voice .director{
+    font-weight: bold;
+    font-size: 24px;
+    color:#93c508;
+}
+.about .mydata .insec .voice .more{
+    text-align: left;
+    text-decoration: none;
+    color:green;
+    font-size: 16px;
+}
+
+
+.service{
+    width: 100%;
+    height: 800px;
+}
+
+.service .offer{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+}
+.service .offer h1{
+    color:rgba(253, 117, 6, 0.918);
+    font-weight: 200;
+    margin-top:20px;
+    text-align: center;
+}
+.service .offer p{
+    font-size: 16px;
+    margin:4px;
+    text-align: center;
+}
+.service .offer ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.service .offer ul li{
+    cursor: pointer;
+    line-height: 80px;
+    list-style: none;
+    border:2px solid rgb(47, 218, 78);
+    border-radius: 12px;
+    height:300px;
+    width:360px;
+    margin:2px;
+}
+.service .offer ul .design{
+    background: url(offer4.jpg) no-repeat;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+.service .offer ul .development{
+    background: url(offer2.jpg) no-repeat;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+.service .offer ul .model{
+    background: url(offer5.jpg) no-repeat;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+.service .offer ul li .mp:hover{
+    color:green;
+}
+.service .offer ul li .mp{
+    margin-top:40px;
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+.contact .area{
+    width: 1000px;
+    background: rgba(0,0,0,0.7) url(contact.jpg) no-repeat;
+    cursor: pointer;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    padding:80px;
+    margin: auto;
+    height: 300px;
+    border-radius: 4px;
+}
+.contact .area .cont_data{
+    font-size: 28px;
+    margin:18px;
+    color:#fff;
+    margin-bottom: 44px;
+}
+.contact .area .cons{
+    text-decoration: none;
+    border:2px solid #000;
+    border-radius: 2px;
+    color:#fff;
+    padding:18px;
+}
+.contact .area .cons:hover{
+    background-color: rgba(184, 42, 42, 0.639);
+    border:2px solid rgba(184, 42, 42, 0.639);
+}
+.top{
+    float:right;
+    position:fixed;
+    bottom:1%;
+    right:1%;
+    background-color: rgb(61, 199, 39);
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    font-weight: 300;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+}
+.top a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.footer{
+    width: 100%;
+    height: 304px;
+    background-color: rgb(9, 9, 9);
+}
+.footer .bottom{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+.footer .bottom .foot_element{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+}
+.footer .bottom .foot_element ul{
+    margin:20px 60px 20px 60px;
+    background-color: #151313a4;
+    border-radius: 8px;
+}
+.footer .bottom .foot_element li{
+    margin:2px;
+    list-style: none;
+    text-align: left;
+    padding:4px;
+}
+.footer .bottom .foot_element ul li .head_element{
+    font-size: 20px;
+    color:#fff;
+}
+.footer .bottom .foot_element ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.footer .bottom .foot_element ul li a:hover{
+    color:red;
+}
+.footer .bottom .icon{
+    height:60px;
+    line-height: 60px;
+    padding:12px;
+}
+.footer .bottom .icon a{
+    margin-right:20px;
+    text-decoration: none;
+    color:white;
+}
+
+.footer .bottom .element{
+    height:50px;
+    line-height: 50px;
+}
+.footer .bottom .element ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer .bottom .element ul li{
+    list-style: none;
+    text-align: center;
+    margin-right:40px;
+}
+.footer .bottom .element ul li a{
+    text-decoration: none;
+    color:#fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.footer .bottom .dev{
+    background-color: #060606;
+    height:44px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size: 13px;
+}
